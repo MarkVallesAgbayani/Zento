@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.font-paragraph {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  @apply text-base leading-relaxed;
+}
