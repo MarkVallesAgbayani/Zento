@@ -1,5 +1,6 @@
 **Zento
 **
+
 **Modern React e-commerce product listing landing page built with React, TypeScript, Vite, and Tailwind CSS.
 **
 
@@ -29,7 +30,8 @@ This project is designed to strengthen frontend development skills using real-wo
 8. Modern clean UI
    
 **Tech Stack**
-**Frontend**
+
+**Frontend**:
 React
 TypeScript
 Vite
