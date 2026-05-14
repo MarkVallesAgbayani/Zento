@@ -31,7 +31,7 @@ function Footer() {
                 <a href="#">Twitter</a>
               </div>
             </nav>
-            <p className="mt-7 text-base">© 2023 XYZ, LLC</p>
+            <p className="mt-7 text-base">© ZENTO 2026</p>
           </div>
         </div>
       </footer>
