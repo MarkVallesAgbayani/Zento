@@ -13,8 +13,10 @@
     "@tailwindcss/vite": "^4.3.0",
     "axios": "^1.16.1",
     "flowbite": "^4.0.2",
+    "lucide-react": "^1.14.0",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
+    "react-router-dom": "^7.15.0",
     "tailwindcss": "^4.3.0"
   },
   "devDependencies": {

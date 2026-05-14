@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import hero from "../assets/images/Hero.jpg";
 function Hero() {
   return (
@@ -20,15 +21,17 @@ function Hero() {
           </h1>
 
           <div className="flex gap-6 tracking-wide">
-            <button
-              style={{
-                backgroundColor: "#1E1E1E",
-                color: "white",
-              }}
-              className="p-2 text-sm border rounded-full w-30 shadow-2xl cursor-pointer"
-            >
-              Shop Now
-            </button>
+            <Link to="/shopnow">
+              <button
+                style={{
+                  backgroundColor: "#1E1E1E",
+                  color: "white",
+                }}
+                className="p-2 text-sm border rounded-full w-30 shadow-2xl cursor-pointer"
+              >
+                Shop Now
+              </button>
+            </Link>
 
             <button
               style={{
@@ -48,9 +51,11 @@ function Hero() {
             Redefine your urban edge
           </p>
 
-          <button className="bg-white text-black font-semibold w-40 p-2 rounded-full shadow-2xl cursor-pointer">
-            Explore More
-          </button>
+          <Link to="/explore">
+            <button className="bg-white text-black font-semibold w-40 p-2 rounded-full shadow-2xl cursor-pointer">
+              Explore More
+            </button>
+          </Link>
         </section>
       </div>
     </header>
