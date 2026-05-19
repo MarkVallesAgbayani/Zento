@@ -33,15 +33,17 @@ function Hero() {
               </button>
             </Link>
 
-            <button
-              style={{
-                backgroundColor: "white",
-                color: "black",
-              }}
-              className="p-2 text-sm rounded-full w-30 shadow-2xl cursor-pointer"
-            >
-              About
-            </button>
+            <Link to="/about">
+              <button
+                style={{
+                  backgroundColor: "white",
+                  color: "black",
+                }}
+                className="p-2 text-sm rounded-full w-30 shadow-2xl cursor-pointer"
+              >
+                About
+              </button>
+            </Link>
           </div>
         </nav>
 

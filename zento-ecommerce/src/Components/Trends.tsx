@@ -1,4 +1,6 @@
-import image1 from "/src/assets/Images/Promo1.jpg";
+import image1 from "/src/assets/Images/portrait1.jpg";
+import image2 from "/src/assets/Images/portrait2.jpg";
+import image3 from "/src/assets/Images/portrait3.jpg";
 
 function Trends() {
   return (
@@ -15,8 +17,8 @@ function Trends() {
         <section>
           <div className="flex gap-10 justify-center items-center my-30">
             <img src={image1} className="w-100 rounded-2xl" />
-            <img src={image1} className="w-100 rounded-2xl" />
-            <img src={image1} className="w-100 rounded-2xl" />
+            <img src={image2} className="w-100 rounded-2xl" />
+            <img src={image3} className="w-100 rounded-2xl" />
           </div>
         </section>
       </header>

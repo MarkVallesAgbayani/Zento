@@ -11,3 +11,114 @@ body {
   font-style: normal;
   @apply text-base leading-relaxed;
 }
+
+/* Responsive helper utilities for non-standard classnames used in components
+   These approximate the intended sizes but make them fluid on smaller screens
+   without changing markup. */
+
+.mx-30 {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.my-30 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.max-h-100 {
+  max-height: 100px;
+}
+.w-400 {
+  width: 400px;
+}
+.w-200 {
+  width: 200px;
+}
+.w-100 {
+  width: 100px;
+}
+.w-90 {
+  width: 90px;
+}
+.h-200 {
+  height: 200px;
+}
+.max-w-85 {
+  max-width: 85px;
+}
+
+/* Medium screens: make images and widths more flexible */
+@media (max-width: 1024px) {
+  .w-400 {
+    width: 60%;
+    max-width: 400px;
+  }
+  .w-200 {
+    width: 50%;
+    max-width: 200px;
+  }
+  .w-100,
+  .w-90 {
+    width: 40%;
+  }
+  .mx-30 {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .my-30 {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Small screens: stack rows, make widths full and images scale */
+@media (max-width: 768px) {
+  .mx-30 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .my-30 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .mt-30 {
+    margin-top: 1rem;
+  }
+
+  .w-400,
+  .w-200,
+  .w-100,
+  .w-90 {
+    width: 100% !important;
+    max-width: none;
+  }
+  .max-h-100 {
+    max-height: none;
+  }
+  .h-200 {
+    height: auto;
+  }
+  .max-w-85 {
+    max-width: 100%;
+  }
+
+  /* Make section rows stack vertically on small screens */
+  section.flex.flex-row,
+  header .flex.flex-row,
+  div.flex.flex-row {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 1rem !important;
+  }
+
+  /* Ensure images inside those rows scale nicely */
+  section.flex.flex-row img,
+  header .flex.flex-row img,
+  div.flex.flex-row img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+  }
+}
